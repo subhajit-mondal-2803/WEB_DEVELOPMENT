@@ -1,0 +1,22 @@
+.box {
+  height: 200px;
+  background-color: pink;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 2rem;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  font-size: 3rem;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  background-color: pink;
+}
