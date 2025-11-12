@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BackGround Color Changer</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        font-size: 1.4rem;
+      }
+
+      .container {
+        width: 70%;
+        margin: 3rem auto;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      button {
+        font-size: 1.3rem;
+        padding: 0.5rem 2rem;
+        border: 2px solid black;
+        height: 50px;
+        width: 100px;
+        border-radius: 1.3rem;
+        z-index: 3;
+      }
+
+      #red {
+        background-color: red;
+      }
+
+      #gray {
+        background-color: gray;
+      }
+
+      #pink {
+        background-color: pink;
+      }
+
+      #orange {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button id="red"></button>
+      <button id="gray"></button>
+      <button id="pink"></button>
+      <button id="orange"></button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

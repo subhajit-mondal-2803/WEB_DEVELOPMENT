@@ -1,0 +1,61 @@
+const quotes = [
+  "The best way to get started is to quit talking and begin doing. – Walt Disney",
+  "Don’t let yesterday take up too much of today. – Will Rogers",
+  "It’s not whether you get knocked down, it’s whether you get up. – Vince Lombardi",
+  "If you are working on something exciting, it will keep you motivated. – Steve Jobs",
+  "Success is not in what you have, but who you are. – Bo Bennett",
+  "Dream bigger. Do bigger.",
+  "Don’t watch the clock; do what it does. Keep going. – Sam Levenson",
+  "Great things never come from comfort zones.",
+  "Success doesn’t just find you. You have to go out and get it.",
+  "The harder you work for something, the greater you’ll feel when you achieve it.",
+  "Don’t stop when you’re tired. Stop when you’re done.",
+  "Wake up with determination. Go to bed with satisfaction.",
+  "Do something today that your future self will thank you for.",
+  "Little things make big days.",
+  "It’s going to be hard, but hard does not mean impossible.",
+  "Push yourself, because no one else is going to do it for you.",
+  "Sometimes later becomes never. Do it now.",
+  "Success is what happens after you’ve survived all your mistakes.",
+  "Your limitation—it’s only your imagination.",
+  "Dream it. Believe it. Build it.",
+  "Don’t wait for opportunity. Create it.",
+  "Be stronger than your excuses.",
+  "Discipline is the bridge between goals and accomplishment. – Jim Rohn",
+  "If you want to achieve greatness stop asking for permission.",
+  "Good things come to people who wait, but better things come to those who go out and get them.",
+  "If you do what you always did, you will get what you always got.",
+  "The key to success is to focus on goals, not obstacles.",
+  "Start where you are. Use what you have. Do what you can. – Arthur Ashe",
+  "If you can dream it, you can do it. – Walt Disney",
+  "The secret of getting ahead is getting started. – Mark Twain",
+  "Everything you can imagine is real. – Pablo Picasso",
+  "Don’t be afraid to give up the good to go for the great. – John D. Rockefeller",
+  "Opportunities don’t happen, you create them. – Chris Grosser",
+  "Do one thing every day that scares you. – Eleanor Roosevelt",
+  "The way to get started is to quit talking and begin doing. – Walt Disney",
+  "The road to success and the road to failure are almost exactly the same. – Colin R. Davis",
+  "Don’t let the fear of losing be greater than the excitement of winning. – Robert Kiyosaki",
+  "Failure is not the opposite of success; it’s part of success. – Arianna Huffington",
+  "Your time is limited, so don’t waste it living someone else’s life. – Steve Jobs",
+  "The only way to do great work is to love what you do. – Steve Jobs",
+  "Coding is not just code, it’s a craft. – Anonymous",
+  "Talk is cheap. Show me the code. – Linus Torvalds",
+  "Programs must be written for people to read, and only incidentally for machines to execute. – Harold Abelson",
+  "First, solve the problem. Then, write the code. – John Johnson",
+  "Code is like humor. When you have to explain it, it’s bad. – Cory House",
+  "Experience is the name everyone gives to their mistakes. – Oscar Wilde",
+  "Before software can be reusable it first has to be usable. – Ralph Johnson",
+  "Simplicity is the soul of efficiency. – Austin Freeman",
+  "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code. – Dan Salomon",
+  "Make it work, make it right, make it fast. – Kent Beck",
+];
+
+const h1 = document.querySelector("h1");
+const button = document.querySelector("button");
+
+h1.textContent = quotes[Math.floor(Math.random() * quotes.length)]; // For first time 
+
+button.addEventListener("click", () => {
+  h1.textContent = quotes[Math.floor(Math.random() * quotes.length)]; // Every time button click
+});

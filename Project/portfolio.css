@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #212121;
+  color: #fbf5e5;
+}
+
+.container {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 1.5rem;
+  padding: 3rem;
+  margin: auto;
+}
+
+.left-container {
+  height: 600px;
+  position: sticky;
+  top: 40px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #33353331;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}
+
+.right-container {
+  border-radius: 1rem;
+  background-color: #33353328;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}
+
+.profile {
+  text-align: center;
+}
+.profile img {
+  border: none;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.profile button {
+  padding: 0.5rem 0.7rem;
+  background-color: #feb21a;
+  color: #0a0a0a;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+}
+
+.contact {
+  border-top: 2px solid rgba(235, 225, 225, 0.228);
+  border-bottom: 2px solid rgba(235, 225, 225, 0.228);
+  margin-top: 2.4rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+.value a {
+  color: #fbf5e5;
+}
+
+.value {
+  padding-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.links {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.links a img {
+  width: 28px;
+  height: 28px;
+  opacity: 0.5;
+  filter: brightness(0) saturate(100%) invert(94%) sepia(35%) saturate(149%)
+    hue-rotate(326deg) brightness(100%) contrast(97%);
+  transition: transform 0.1s linear;
+}
+
+#X {
+  width: 20px;
+  height: 20px;
+}
+
+.links a img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(90%) saturate(455%)
+    hue-rotate(350deg) brightness(106%) contrast(99%);
+}
+
+.links a:active {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(8%) saturate(2603%)
+    hue-rotate(323deg) brightness(107%) contrast(104%);
+}
+
+#heading {
+  padding: 0 2rem;
+}
+
+nav {
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  border-bottom: 1px solid #fbf5e53c;
+}
+nav a {
+  color: #fbf5e5;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: #feb21a;
+}
+
+#about,
+#skills,
+#education {
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.head-label {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.line {
+  width: 9%;
+  height: 0.3rem;
+  background-color: #feb21a;
+}
+
+#about p {
+  padding: 0 1rem 0 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.skills-card-container {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.skills-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.8rem;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(90%) saturate(455%)
+    hue-rotate(350deg) brightness(106%) contrast(99%);
+}
+
+.skills-card {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}
+
+.skills-card p {
+  font-size: 1.1rem;
+  opacity: 0.6;
+}
+
+#education {
+  margin-bottom: 2rem;
+}
+
+.edu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+.symbol {
+  width: 10px;
+  height: 10px;
+  background-color: #212121;
+  border: 3px solid #feb21a;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  z-index: 10;
+}
+.symbol-line {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0.2;
+  top: 3px;
+  left: 4px;
+  bottom: 0;
+}
+.edu-container p {
+  opacity: 0.6;
+}
+
+#degree {
+  font-weight: 600;
+}
