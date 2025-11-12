@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#parent {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.user-card {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem;
+}
+
+.user-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.user-card h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.user-card a {
+  text-decoration: none;
+  color: orange;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  background-color: #ffffff;
+  padding: 0.5rem 1.3rem;
+}
